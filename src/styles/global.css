@@ -507,39 +507,98 @@ section {
 }
 
 @media (max-width: 900px) {
-  .btn-topo {
-  right: 20px;
-  bottom: 20px;
 
-  width: 50px;
-  height: 50px;
-}
   section {
-    padding: 80px 6%;
+    padding: 90px 8%;
   }
 
-  .hero-container {
-    flex-direction: column;
+  /* HERO */
+
+  .hero {
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  .hero-image {
+  .hero-avatar {
+    width: 180px;
+    height: 180px;
+    margin: 25px auto 30px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+    line-height: 1.05;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .hero-skills {
+    gap: 10px;
+  }
+
+  .hero-skills span {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .btn-contato {
     width: 100%;
-    max-width: 350px;
-    height: 420px;
+    max-width: 280px;
+    font-size: 16px;
   }
+
+  .hero-scroll {
+    margin-top: 50px;
+    font-size: 12px;
+  }
+
+  /* TITULOS */
 
   .section-title {
-    font-size: 42px;
+    font-size: 48px;
   }
+
+  .section-tag {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  /* SOBRE */
+
+  .sobre-text {
+    font-size: 22px;
+    line-height: 1.9;
+  }
+
+  /* FORMAÇÃO */
 
   .formacao-item {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 15px;
+    margin-bottom: 50px;
   }
 
-  .servicos-grid,
-  .projetos-grid {
-    grid-template-columns: 1fr;
+  .formacao-periodo {
+    font-size: 16px;
+  }
+
+  .formacao-info h3 {
+    font-size: 24px;
+  }
+
+  .formacao-info p {
+    font-size: 18px;
+  }
+
+  /* EXPERIÊNCIA */
+
+  .timeline-card {
+    padding: 24px;
   }
 
   .timeline-top {
@@ -548,7 +607,100 @@ section {
     gap: 12px;
   }
 
+  .timeline-top h3 {
+    font-size: 24px;
+  }
+
+  .empresa {
+    font-size: 16px;
+  }
+
+  .timeline-card li {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* HABILIDADES */
+
+  .skills-container {
+    gap: 12px;
+  }
+
+  .skill-tag {
+    font-size: 15px;
+    padding: 14px 20px;
+  }
+
+  /* SERVIÇOS */
+
+  .servicos-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .servico-card {
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .servico-numero {
+    font-size: 24px;
+  }
+
+  .servico-card h3 {
+    font-size: 24px;
+  }
+
+  .servico-card p {
+    font-size: 17px;
+  }
+
+  /* PROJETOS */
+
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-card h3 {
+    font-size: 24px;
+  }
+
+  .projeto-card p {
+    font-size: 17px;
+  }
+
+  /* CONTATO */
+
   .contato-card {
-    padding: 40px 25px;
+    padding: 35px 25px;
+  }
+
+  .contato-card h3 {
+    font-size: 28px;
+  }
+
+  .contato-card p {
+    font-size: 18px;
+  }
+
+  .contato-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-buttons a {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  /* BOTÃO TOPO */
+
+  .btn-topo {
+    right: 20px;
+    bottom: 20px;
+
+    width: 50px;
+    height: 50px;
   }
 }

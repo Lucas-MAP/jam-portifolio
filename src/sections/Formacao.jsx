@@ -1,24 +1,29 @@
 function Formacao() {
   const formacoes = [
     {
-      periodo: "2014 - 2016",
+      periodo: "2024 - 2026",
       titulo: "Mestrado em História",
-      instituicao: "Universidade Federal de Goiás",
+      instituicao: "Universidade Federal do Sul e Sudeste do Pará(UNIFESSPA)",
     },
     {
-      periodo: "2012 - 2014",
+      periodo: "2025",
       titulo: "Especialização em Gestão Educacional",
-      instituicao: "Faculdade IESB",
+      instituicao: "Faculdade IMES",
     },
     {
-      periodo: "2011 - 2012",
+      periodo: "2025",
       titulo: "Especialização em História e Cultura Afro-Brasileira",
-      instituicao: "Faculdade IESB",
+      instituicao: "Faculdade FACPRISMA",
     },
     {
-      periodo: "2007 - 2010",
+      periodo: "2023 - 2024",
+      titulo: "Especialização em Ensino de Geografia, Meio Ambiente e História",
+      instituicao: "Instituto Faculminas - FACULMINAS",
+    },
+    {
+      periodo: "2019 - 2022",
       titulo: "Licenciatura em História",
-      instituicao: "Universidade Federal do Tocantins",
+      instituicao: "Universidade Federal do Tocantins (UFT)",
     },
   ];
 
