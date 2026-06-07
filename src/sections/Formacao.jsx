@@ -18,10 +18,10 @@ function Formacao() {
     {
       periodo: "2023 - 2024",
       titulo: "Especialização em Ensino de Geografia, Meio Ambiente e História",
-      instituicao: "Instituto Faculminas - FACULMINAS",
+      instituicao: "Instituto Facuminas - FACUMINAS",
     },
     {
-      periodo: "2019 - 2022",
+      periodo: "2019 - 2023",
       titulo: "Licenciatura em História",
       instituicao: "Universidade Federal do Tocantins (UFT)",
     },
