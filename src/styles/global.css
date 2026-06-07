@@ -55,7 +55,9 @@ section {
    HERO
 ================================================== */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,200 +509,81 @@ section {
 }
 
 @media (max-width: 900px) {
+ .hero-avatar {
+  width: 220px;
+  height: 220px;
+}
 
-  section {
-    padding: 90px 8%;
-  }
+.hero-title {
+  font-size: 64px;
+}
 
-  /* HERO */
+.hero-subtitle {
+  font-size: 22px;
+  line-height: 1.8;
+}
 
-  .hero {
-    min-height: 100vh;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.hero-skills span {
+  font-size: 16px;
+  padding: 12px 18px;
+}
 
-  .hero-avatar {
-    width: 180px;
-    height: 180px;
-    margin: 25px auto 30px;
-  }
+.section-title {
+  font-size: 56px;
+}
 
-  .hero-title {
-    font-size: 52px;
-    line-height: 1.05;
-  }
+.sobre-text {
+  font-size: 26px;
+  line-height: 2;
+}
 
-  .hero-subtitle {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-  }
+.formacao-periodo {
+  font-size: 18px;
+}
 
-  .hero-skills {
-    gap: 10px;
-  }
+.formacao-info h3 {
+  font-size: 28px;
+}
 
-  .hero-skills span {
-    font-size: 14px;
-    padding: 10px 16px;
-  }
+.formacao-info p {
+  font-size: 20px;
+}
 
-  .btn-contato {
-    width: 100%;
-    max-width: 280px;
-    font-size: 16px;
-  }
+.timeline-top h3 {
+  font-size: 28px;
+}
 
-  .hero-scroll {
-    margin-top: 50px;
-    font-size: 12px;
-  }
+.empresa {
+  font-size: 18px;
+}
 
-  /* TITULOS */
+.timeline-card li {
+  font-size: 18px;
+}
 
-  .section-title {
-    font-size: 48px;
-  }
+.skill-tag {
+  font-size: 16px;
+  padding: 16px 22px;
+}
 
-  .section-tag {
-    font-size: 12px;
-    letter-spacing: 3px;
-  }
+.servico-card h3 {
+  font-size: 28px;
+}
 
-  /* SOBRE */
+.servico-card p {
+  font-size: 18px;
+}
 
-  .sobre-text {
-    font-size: 22px;
-    line-height: 1.9;
-  }
+.contato-card h3 {
+  font-size: 32px;
+}
 
-  /* FORMAÇÃO */
+.contato-card p {
+  font-size: 20px;
+}
 
-  .formacao-item {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin-bottom: 50px;
-  }
-
-  .formacao-periodo {
-    font-size: 16px;
-  }
-
-  .formacao-info h3 {
-    font-size: 24px;
-  }
-
-  .formacao-info p {
-    font-size: 18px;
-  }
-
-  /* EXPERIÊNCIA */
-
-  .timeline-card {
-    padding: 24px;
-  }
-
-  .timeline-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .timeline-top h3 {
-    font-size: 24px;
-  }
-
-  .empresa {
-    font-size: 16px;
-  }
-
-  .timeline-card li {
-    font-size: 16px;
-    line-height: 1.8;
-  }
-
-  /* HABILIDADES */
-
-  .skills-container {
-    gap: 12px;
-  }
-
-  .skill-tag {
-    font-size: 15px;
-    padding: 14px 20px;
-  }
-
-  /* SERVIÇOS */
-
-  .servicos-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .servico-card {
-    min-height: auto;
-    padding: 28px;
-  }
-
-  .servico-numero {
-    font-size: 24px;
-  }
-
-  .servico-card h3 {
-    font-size: 24px;
-  }
-
-  .servico-card p {
-    font-size: 17px;
-  }
-
-  /* PROJETOS */
-
-  .projetos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .projeto-card h3 {
-    font-size: 24px;
-  }
-
-  .projeto-card p {
-    font-size: 17px;
-  }
-
-  /* CONTATO */
-
-  .contato-card {
-    padding: 35px 25px;
-  }
-
-  .contato-card h3 {
-    font-size: 28px;
-  }
-
-  .contato-card p {
-    font-size: 18px;
-  }
-
-  .contato-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contato-buttons a {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-  }
-
-  /* BOTÃO TOPO */
-
-  .btn-topo {
-    right: 20px;
-    bottom: 20px;
-
-    width: 50px;
-    height: 50px;
-  }
+.contato-buttons a {
+  font-size: 18px;
+  padding: 18px 24px;
+}
 }
