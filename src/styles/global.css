@@ -1,6 +1,9 @@
 /* ==================================================
    RESET
 ================================================== */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -80,7 +83,7 @@ section {
 }
 
 .hero-title {
-  font-size: 88px;
+  font-size: clamp(56px, 8vw, 110px);
   line-height: 1;
   margin-bottom: 30px;
 }
@@ -104,6 +107,32 @@ section {
   border: 1px solid #b8c6d6;
   background: rgba(255,255,255,.35);
   color: #3f5c84;
+}
+.hero-actions {
+  margin-top: 40px;
+}
+
+.btn-contato {
+  display: inline-block;
+
+  background: #1e2746;
+  color: white;
+
+  padding: 16px 34px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.btn-contato:hover {
+  transform: translateY(-2px);
+  background: #28345f;
 }
 
 .hero-scroll {
@@ -435,12 +464,56 @@ section {
   color: #1e2746;
 }
 
+.contato-buttons a:hover {
+  transform: translateY(-2px);
+}
+
 /* ==================================================
    RESPONSIVO
 ================================================== */
+.btn-topo {
+  position: fixed;
+
+  right: 30px;
+  bottom: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: #b89b45;
+  color: white;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+
+  transition: .3s;
+
+  z-index: 999;
+}
+
+.btn-topo:hover {
+  transform: translateY(-3px);
+  background: #c7a54a;
+}
 
 @media (max-width: 900px) {
+  .btn-topo {
+  right: 20px;
+  bottom: 20px;
 
+  width: 50px;
+  height: 50px;
+}
   section {
     padding: 80px 6%;
   }
@@ -453,10 +526,6 @@ section {
     width: 100%;
     max-width: 350px;
     height: 420px;
-  }
-
-  .hero-title {
-    font-size: clamp(72px, 8vw, 110px);
   }
 
   .section-title {

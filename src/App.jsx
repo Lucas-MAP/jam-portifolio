@@ -1,6 +1,6 @@
-import Hero from "./sections/Hero"
-import Sobre from "./sections/Sobre"
-import Formacao from "./sections/Formacao"
+import Hero from "./sections/Hero";
+import Sobre from "./sections/Sobre";
+import Formacao from "./sections/Formacao";
 import Experiencia from "./sections/Experiencia";
 import Habilidades from "./sections/Habilidades";
 import Servicos from "./sections/Servicos";
@@ -18,9 +18,11 @@ function App() {
       <Servicos />
       {/*<Projetos />*/}
       <Contato />
-
+      <a href="#topo" className="btn-topo">
+        ↑
+      </a>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

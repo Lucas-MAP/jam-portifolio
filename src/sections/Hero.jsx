@@ -2,7 +2,7 @@ import perfil from "../assets/perfil.jpeg";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section id="topo" className="hero">
       <div className="hero-container">
         <p className="hero-tag">PORTFÓLIO PROFISSIONAL</p>
 
@@ -30,6 +30,13 @@ function Hero() {
           <span>Consultoria Pedagógica</span>
           <span>Pesquisa Acadêmica</span>
         </div>
+
+        <div className="hero-actions">
+          <a href="#contato" className="btn-contato">
+            Entrar em contato
+          </a>
+        </div>
+
         <div className="hero-scroll">↓ ROLE PARA EXPLORAR</div>
       </div>
     </section>
