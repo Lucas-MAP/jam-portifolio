@@ -1,0 +1,485 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f5f1;
+  color: #1e2746;
+  font-family: Georgia, serif;
+}
+
+section {
+  padding: 120px 8%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ==================================================
+   ELEMENTOS GLOBAIS
+================================================== */
+
+.section-tag {
+  color: #b89b45;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.section-title {
+  margin-top: 20px;
+  font-size: 64px;
+  font-weight: 400;
+  color: #1e2746;
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+  background: #b89b45;
+  margin: 30px 0 60px;
+}
+
+/* ==================================================
+   HERO
+================================================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf3f8;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 1100px;
+}
+
+.hero-avatar {
+  width: 340px;
+  height: 340px;
+  margin: 35px auto 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #b89b45;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  font-size: 88px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  color: #4a5568;
+  margin-bottom: 40px;
+}
+
+.hero-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-skills span {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid #b8c6d6;
+  background: rgba(255,255,255,.35);
+  color: #3f5c84;
+}
+
+.hero-scroll {
+  margin-top: 90px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5b7aa5;
+  opacity: 0.9;
+}
+
+/* ==================================================
+   SOBRE
+================================================== */
+
+.sobre {
+  background: #f7f5f1;
+}
+
+.sobre-text {
+  max-width: 900px;
+  font-size: 24px;
+  line-height: 2;
+  color: #4a5568;
+}
+
+/* ==================================================
+   FORMAÇÃO
+================================================== */
+
+.formacao {
+  background: #edf3f8;
+}
+
+.formacao-lista {
+  margin-top: 70px;
+}
+
+.formacao-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.formacao-periodo {
+  color: #b89b45;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.formacao-info h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1e2746;
+}
+
+.formacao-info p {
+  font-size: 18px;
+  color: #4a5568;
+}
+
+/* ==================================================
+   EXPERIÊNCIA
+================================================== */
+
+.experiencia {
+  background: #f7f5f1;
+}
+
+.timeline {
+  margin-top: 60px;
+}
+
+.timeline-card {
+  background: white;
+  border: 1px solid #d8e2ec;
+  border-radius: 22px;
+  padding: 35px;
+  margin-bottom: 25px;
+}
+
+.timeline-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.timeline-top h3 {
+  font-size: 28px;
+  color: #1e2746;
+}
+
+.timeline-badge {
+  background: #7b98b4;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timeline-badge.gold {
+  background: #b8922f;
+}
+
+.timeline-badge.blue {
+  background: #7b98b4;
+}
+
+.empresa {
+  color: #3f5c84;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.timeline-card ul {
+  list-style: none;
+}
+
+.timeline-card li {
+  color: #334155;
+  line-height: 1.9;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.timeline-card li::before {
+  content: "— ";
+  color: #b89b45;
+}
+
+/* ==================================================
+   HABILIDADES
+================================================== */
+
+.habilidades {
+  background: #edf3f8;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.skill-tag {
+  background: white;
+  padding: 16px 26px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e2746;
+  border: 1px solid #d8e2ec;
+  transition: .3s;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+  background: rgb(255, 255, 255);
+}
+
+/* ==================================================
+   SERVIÇOS
+================================================== */
+
+.servicos {
+  background: #edf3f8;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.servico-card {
+  background: #f7f5f1;
+  border-radius: 18px;
+  padding: 32px;
+  min-height: 270px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: .3s;
+}
+
+.servico-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.05);
+}
+
+.servico-numero {
+  display: block;
+  color: #c59a32;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.servico-card h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #1e2746;
+}
+
+.servico-card p {
+  color: #4a5568;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ==================================================
+   PROJETOS
+================================================== */
+
+.projetos {
+  background: #edf3f8;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.projeto-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,.06);
+}
+
+.projeto-placeholder {
+  height: 220px;
+  background: #d9e3ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 18px;
+}
+
+.projeto-card h3 {
+  padding: 25px 25px 10px;
+  color: #1e2746;
+  font-size: 26px;
+}
+
+.projeto-card p {
+  padding: 0 25px 25px;
+  color: #4a5568;
+  line-height: 1.8;
+}
+
+/* ==================================================
+   CONTATO
+================================================== */
+
+.contato {
+  background: #f7f5f1;
+}
+
+.contato-card {
+  background: white;
+  border: 1px solid #d8e2ec;
+  border-radius: 24px;
+  padding: 60px;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contato-card h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #1e2746;
+}
+
+.contato-card p {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.contato-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contato-buttons a {
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.btn-email {
+  background: #1e2746;
+  color: white;
+}
+
+.btn-whatsapp {
+  background: #b89b45;
+  color: white;
+}
+
+.btn-lattes {
+  border: 2px solid #1e2746;
+  color: #1e2746;
+}
+
+/* ==================================================
+   RESPONSIVO
+================================================== */
+
+@media (max-width: 900px) {
+
+  section {
+    padding: 80px 6%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+  }
+
+  .hero-title {
+    font-size: clamp(72px, 8vw, 110px);
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .formacao-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .servicos-grid,
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .contato-card {
+    padding: 40px 25px;
+  }
+}
